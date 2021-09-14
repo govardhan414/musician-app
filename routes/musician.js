@@ -20,7 +20,7 @@ router.get('/all', (req, res) => {
   });
 });
 
-// retrieve a musician from data store
+ // retrieve a musician from data store
 router.get('/:id', (req, res) => {
   const { musician } = req.app.locals;
   musician.getMusician(req.params.id, (err, returnedMusician) => {
